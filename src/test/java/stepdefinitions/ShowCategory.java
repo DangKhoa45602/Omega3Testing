@@ -25,6 +25,6 @@ public class ShowCategory extends BaseStepDef {
     @Then("Go to Category dashboard")
     public void goToCategoryDashboard() {
        String title = driver.findElement(By.xpath("//h1[@class='core-title']")).getText();
-       Assert.assertEquals(title, "Product_category", "Sai rồi");
+       Assert.assertEquals(title, "Product_Category", "Sai rồi");
     }
 }
