@@ -16,12 +16,14 @@ public class ProjectSteps extends BaseStepDef{
     }
 
     @Given("the user login to system")
-    public void the_user_login_to_system() {
+    public void the_user_login_to_system()
+    {
         driver.get("https://anhtester.com");
     }
 
     @When("user open the project page")
-    public void user_open_the_project_page() {
+    public void user_open_the_project_page()
+    {
         System.out.println("user_open_the_project_page");
     }
 
