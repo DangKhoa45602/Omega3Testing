@@ -37,6 +37,5 @@ public class LoginAdmin extends BaseStepDef {
     public void goToDashboard() {
         boolean title = driver.findElement(By.xpath("//nav[@class='sb-topnav navbar navbar-expand navbar-dark bg-dark']")).isDisplayed();
         Assert.assertTrue(true, "sửa lại");
-
     }
 }
