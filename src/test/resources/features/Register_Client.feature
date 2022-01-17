@@ -6,4 +6,4 @@ Feature: RegisterClient
       Then Go to dasshboard
       Examples:
       | url | User | Email| Password| ReEnterPassword| Phone|
-      |http://website-shop-demo.herokuapp.com/dang-ky| hoangluat| hoangluat1211@gmail.com|123123|123123|0932684368|
+      |http://website-shop-demo.herokuapp.com/dang-ky| hoangluat| hoangluat1211@gmail.com|12345678|12345678|0932684368|
