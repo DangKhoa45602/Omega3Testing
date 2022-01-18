@@ -32,9 +32,10 @@ public class CreateNewSetting extends BaseStepDef {
     }
 
     @Then("A new setting created")
-    public void aNewSettingCreated() {
-       String Id = driver.findElement(By.xpath("//tbody//tr//td[1]")).getText();
-       Assert.assertEquals(Id , "Thay đổi", "error");
+    public void aNewSettingCreated() throws InterruptedException {
+        Thread.sleep(3000);
+        String CheckCreated = driver.findElement(By.xpath("//div[@role='alert']//strong")).getText();
+        Assert.assertEquals(CheckCreated,"Thêm mới thành công", "lỗi rồi");
     }
 
 
